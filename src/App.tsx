@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import cn from 'classnames'
+import Scene from './components/Scene'
 
-function App() {
+// ----------------------------------------------------------------------
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h1
+        className={cn(
+          'absolute top-1/2 left-1/2 text-white text-8xl whitespace-nowrap -translate-x-1/2 -translate-y-1/2 z-50',
+        )}
+      >
+        POMADA MODELADORA
+      </h1>
+      <Scene />
+    </>
+  )
 }
 
-export default App;
+export default App
